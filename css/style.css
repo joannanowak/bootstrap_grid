@@ -3,6 +3,7 @@
 'Droid Serif', serif; wszystkie teksty pochyłą czcionką
 'Montserrat', sans-serif; menu, nagłówki i buttony -
 RobotoSlab - pozostały tekst
+color: #333333;
 */
 @font-face{
 	font-family: 'Montserrat';
@@ -13,7 +14,6 @@ body{
 	text-align: center;
 	left: 0;
 	right: 0;
-	color: #333333;
 	font-family: 'Montserrat';
 }
 a:visited{
@@ -29,6 +29,8 @@ h1{
 h2{
 	padding: 20px;
 	font-family: 'Montserrat';
+	font-weight: 400;
+
 }
 
 .row{
@@ -38,17 +40,39 @@ h2{
 button{
 	background-color: #0ed8d6;
 	border: solid 1px #0ed8d6;
-	height: 75px;
-	width: 250px;
+	height: 70px;
+	width: 200px;
 	font-size: 18px;
 	color: white;
 }
+
+p{
+	font-family: 'RobotoSlab';
+	color: #777777;
+}
+
+.sub-header{
+	font-family: 'DroidSerif';
+	color: #777777;
+	font-style: italic;
+}
+
 /*nav-bar*/
 #main-nav{
 	background-color: transparent;
 	border: 1px solid transparent;
 	transition: all 0.3s;
 	font-family: 'Montserrat', sans-serif;
+	margin-right: 150px;
+	margin-left: 100px;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	color: grey;
 }
 
 
@@ -86,34 +110,106 @@ button{
 
 #header .main-header-content h2{
 	margin: 0;
-	font-weight: 100;
+	font-family: 'Driod';
+	font-weight: 400;
+
 }
 
-services{
-	
+
+/*SERVICES*/
+#services .container-fluid .row .single-service-unit .round-icon i{
+	font-size: 50px;
 }
 
+#services .container-fluid .row .single-service-unit .round-icon{
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	font-size: 50px;
+	line-height: 100px;
+	border: 1.5px solid #0ed8d6;
+	border-radius: 100%;
+	text-align: center;
+	margin-right: 20px;
+	background-color: #0ed8d6;
+	color: white;
+	margin-bottom: 20px;
+}
+#services .container-fluid .row .single-service-unit h4{
+	margin-bottom: 20px;
+}
 /*portfolio*/
 #portfolio{
 	background-color: #f7f7f7;
 	
 }
+
 #portfolio .container-fluid .row .single-portfolio-item-photo{
-	background-image: url(../img/portfolio/chestnut_on_bracket.png);
 	background-position: center;
 	height: 270px;
 	width:  370px;
 	background-size: cover;
 	font-size: 0;
+	position: relative;
 }
+#portfolio-photo-1{
+	background-image: url(../img/portfolio/chestnut_on_bracket.png);
+	background-size: cover;
+	position: relative;
+}
+#portfolio-photo-2{
+	background-image: url(../img/portfolio/typing_on_laptop.png);
+	background-size: cover;
+	position: relative;
+}
+#portfolio-photo-3{
+	background-image: url(../img/portfolio/child_with_blue_paint.png);
+	background-size: cover;
+	position: relative;
+}
+#portfolio-photo-4{
+	background-image: url(../img/portfolio/chaotic_paint.png);
+	background-size: cover;
+	position: relative;
+}
+#portfolio-photo-5{
+	background-image: url(../img/portfolio/house_with_blue_doors.png);
+	background-size: cover;
+	position: relative;
+}
+#portfolio-photo-6{
+	background-image: url(../img/portfolio/box_of_cookies.png);
+	background-size: cover;
+	position: relative;
+}
+#portfolio .container-fluid .row .single-portfolio-item-photo .single-portfolio-item-photo-mask{
+	background: rgba(14, 216, 214, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;  
+    opacity: 0;
+}
+#portfolio .container-fluid .row .single-portfolio-item-photo .single-portfolio-item-photo-mask:hover{
+	opacity: 1;
+}
+
+#portfolio .container-fluid .row .single-portfolio-item-photo .single-portfolio-item-photo-mask i{
+	font-size: 50px;
+	color: white;
+    margin-top: 30%;
+}
+
 #portfolio .container-fluid .row .single-portfolio-item-description{
 	background-color: white;
 	width: 370px;
 	height: 110px;
 	left: 0;
 	right: 0;
-	
 }
+#portfolio .container-fluid .row .single-portfolio-item-description h5{
+	margin-top: 15px;
+}
+/*
 
 .row.no-gutters {
   margin-right: 0;
@@ -125,6 +221,7 @@ services{
   padding-right: 0;
   padding-left: 0;
 }
+*/
 
 /*team*/
 #team .container-fluid .row .single-team-member .single-team-member-photo{
@@ -184,6 +281,9 @@ services{
 	position: relative;
 	color: white;
 }
+#contact .container-fluid .row p{
+	color: white;
+}
 
 
 
@@ -191,15 +291,16 @@ services{
 /*footer*/
 footer{
 	height: 100px;
-	font-style: italic;
-}
-.copyrights{
+	font-family: 'RobotoSlab';
 	color: #777777;
 }
 
+
+/*
 .copyrights, .footer-social-media-icons, .terms-conditions{
 	margin-top: 50px;
 }
+*/
 
 footer .container-fluid .row .footer-social-media-icons a{
 	display: inline-block;
