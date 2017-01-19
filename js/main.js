@@ -43,10 +43,5 @@ if ($(window).scrollTop() >= 50) {
 //	Scroll Reveal
 	
 	window.sr = ScrollReveal({ reset: true }).reveal('.row');
-		
 	
-
-	
-
-
 });

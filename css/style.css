@@ -238,6 +238,11 @@ p{
 */
 
 /*team*/
+#team .container-fluid .row .single-team-member {
+	margin-bottom: 35px;
+	margin-top: 35px;
+}
+
 #team .container-fluid .row .single-team-member .single-team-member-photo{
 	height: 250px;
 	width: 250px;
@@ -309,15 +314,15 @@ p{
 
 input#name, input#email, input#phone{
 	height: 65px;
-	width: 570px;
+	width: 100%;
 }
 .noresize {
 	resize: none;
 }
 
 #text_area{
-	height: 250px;
-	width: 570px;
+	height: 235px;
+	width: 100%;
 }
 
 
